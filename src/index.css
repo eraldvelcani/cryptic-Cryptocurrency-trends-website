@@ -76,16 +76,16 @@ a {
   flex-wrap: wrap;
 }
 
-.top-controls .filter {
+.top-controls .coin-filter {
   flex: 1;
 }
 
-.top-controls .controls {
+.top-controls .page-ontrols {
   flex-shrink: 0;
 }
 
 /* Limit Select */
-.controls {
+.page-controls {
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
@@ -93,11 +93,11 @@ a {
   gap: 0.75rem;
 }
 
-.controls label {
+.page-controls label {
   font-weight: bold;
 }
 
-.controls select {
+.page-controls select {
   padding: 0.5rem 1rem;
   border-radius: 8px;
   background: #1c1f26;
@@ -106,11 +106,11 @@ a {
 }
 
 /* Filter Input */
-.filter {
+.coin-filter {
   margin-bottom: 2rem;
 }
 
-.filter input {
+.coin-filter input {
   width: 100%;
   padding: 0.75rem;
   border-radius: 8px;
