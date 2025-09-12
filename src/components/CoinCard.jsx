@@ -1,5 +1,8 @@
+import { Link } from "react-router";
+
 const CoinCard = ({cryptoCoin}) => {
     return ( 
+      <Link to={`/coin/${cryptoCoin.id}`}>
         <div className="card-coin">
             <div className="header-coin">
               <img src={cryptoCoin.image} alt={cryptoCoin.name} className="image-coin" />
@@ -8,11 +11,12 @@ const CoinCard = ({cryptoCoin}) => {
                 <p className="symbol"></p>
               </div>
             </div>
-            <p>Price: {cryptoCoin.current_price.toLocaleString()}</p>
+            <p>Price: €{cryptoCoin.current_price.toLocaleString()}</p>
             <p className={cryptoCoin.price_change_percentage_24h >= 0 ? 'positive' : 'negative'}>
               {cryptoCoin.price_change_percentage_24h.toFixed(3)}%
             </p>
           </div>
+        </Link>
      );
 }
  
