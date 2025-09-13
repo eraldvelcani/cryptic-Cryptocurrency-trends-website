@@ -2,6 +2,7 @@ import { useParams } from "react-router";
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import Spinner from "../components/Spinner";
+import CoinChart from "../components/CoinChart";
 
 const API = import.meta.env.VITE_API_COIN;
 
@@ -51,6 +52,9 @@ const CoinInfo = () => {
                         <h4>All-Time High: €{cryptoCoin.market_data.ath.eur.toLocaleString()} on {' '} {new Date(cryptoCoin.market_data.ath_date.eur).toLocaleDateString()}</h4>
                         <h4>All-Time Low: €{cryptoCoin.market_data.atl.eur.toLocaleString()} on {' '} {new Date(cryptoCoin.market_data.atl_date.eur).toLocaleDateString()}</h4>
                     </div>
+
+                    <CoinChart coinID={cryptoCoin.id} />
+
                     <div className="coin-details-links">
                         {cryptoCoin.links.homepage[0] && (
                             <p>
