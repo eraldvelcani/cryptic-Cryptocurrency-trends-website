@@ -7,6 +7,12 @@ Built with modern web technologies, it provides users with a simple yet powerful
 
 --- 
 
+## 🚀 Live Demo
+
+[Visit the live site](https://cryptic-cryptocurrency-trends-websi.vercel.app/)  
+
+---
+
 ## Features
 
 - Live cryptocurrency data (price, market cap, daily change, etc.)
