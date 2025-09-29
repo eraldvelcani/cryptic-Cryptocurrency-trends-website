@@ -1,4 +1,4 @@
-![Website screenshot collage](websitescreenshot.png)
+![Website screenshot collage](website-screenshot.png)
 
 ## Cryptic – Cryptocurrency Trends Website
 
