@@ -56,34 +56,6 @@ const CoinChart = ({coinID}) => {
         fetchPrice();
     }, [coinID]);
 
-
-    // return <div style={{marginTop: '25px'}}>
-    //         <Line data={coinChartData} options={{
-    //         responsive: true,
-    //         plugins: {
-    //             legend: {display: false},
-    //             tooltip: {mode: 'index', intersect: 'false'}
-    //         },
-    //         scales: {
-    //             x: {
-    //                 type: 'time',
-    //                 time: {
-    //                     unit: 'day'
-    //                 },
-    //                 ticks: {
-    //                     autoSkip: true,
-    //                     maxTicksLimit: 7,
-    //                 }
-    //             },
-    //             y: {
-    //                 ticks: {
-    //                     callback: (value) => `€${value.toLocaleString()}` //runs this function for every tick
-    //                 }
-    //             }
-    //         }
-    //     }} 
-    //     />
-    //     </div>;
     return (
         <div style={{ marginTop: '25px' }}>
             {!loader && coinChartData ? (

@@ -13,7 +13,7 @@ const CoinCard = ({cryptoCoin}) => {
             </div>
             <p>Price: €{cryptoCoin.current_price.toLocaleString()}</p>
             <p className={cryptoCoin.price_change_percentage_24h >= 0 ? 'positive' : 'negative'}>
-              {cryptoCoin.price_change_percentage_24h.toFixed(3)}%
+              {Number(cryptoCoin.price_change_percentage_24h).toFixed(2)}%
             </p>
           </div>
         </Link>
